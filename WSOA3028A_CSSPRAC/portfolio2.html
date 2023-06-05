@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="portfolio2.css">
+    <script src="https://kit.fontawesome.com/e513dbdc77.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="header">
+
+       <div class="side-nav">
+        <ul>
+            <li><img src="Media/home.png"><p><a href="index.html">HomePage</a></p></li>
+            <li><img src="Media/blogging.png"><p><a href="blog.html">Blog</a></p></li>
+            <li><img src="Media/sketch.png"><p><a href="design2.html">Design</a></p></li>
+            <li><img src="Media/essay.png"><p><a href="essay.html">Essay</a></p></li>
+            <li><img src="Media/portfolio.png"><p><a href="portfolio2.html">Portfolio</a></p></li>
+        </ul>
+       
+
+
+       </div> 
+
+
+    </div>
+
+
+    
+
+<header class="header">
+
+   
+
+    <nav class="navbar">
+        <a href="#home">ABOUT</a>
+        <a href="#about">MUSIC</a>
+        <a href="#menu">FILM</a>
+        <a href="#products">TEA</a>
+        
+        
+
+
+    </nav>
+
+    
+
+
+
+
+
+
+
+
+
+</header>
+
+<section class="home" id="home">
+
+    <div class="content">
+
+        <h3>ALL ABOUT VEE</h3>
+        <p>This Section Contains All Things I Enjoy</p>
+
+
+
+
+    </div>
+
+
+
+
+</section>
+
+
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span></span> </h1>
+
+    <div class="row">
+
+        <div class ="image">
+            <img src="Media/gunjan-patel-gF4BrWQTWhw-unsplash.jpg" alt="">
+
+
+        </div>
+
+        <div class="content">
+            <h3> Favourite Song</h3>
+            <p>Click Here To Listen</p>
+            <img src="Media/play.png" id="icon">
+            
+          
+
+
+        </div>
+
+        
+
+
+    </div>
+
+    <audio id="mySong">
+
+        <source src="Media/Amu Classic, Kappie & Muziqal Tone - Opemaria ft. LeeMckrazy & Mzweshper SA (Audio Visual).mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src = "Media/pause-button.png";
+            }else{
+                mySong.pause();
+                icon.src = "Media/play.png";
+            }
+
+        }
+
+
+    </script>
+
+
+
+
+</section>
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> <span>FILM</span> </h1>
+
+    <div class="row">
+
+        <div class ="video-container">
+            <div class="video"><video src="Media/netflix.mp4" muted autoplay controls></video></div>
+            <div class="pop-up-video">
+                <span>&times;</span>
+               
+            
+    
+            </div>
+
+
+        </div>
+
+        
+
+
+    </div>
+
+
+
+
+</section>
+
+<section class="products" id="products">
+
+    <h1 class="heading"> <span>Favourite Tea</span> </h1>
+
+    <div class="row">
+
+        <div class ="image">
+            <img src="Media/JOKO AND TEA.jpg" alt="">
+
+
+        </div>
+
+        <div class="content">
+            <h3>JOKO</h3>
+            <p>Tea, a timeless beverage, holds an unmatched allure with its delightful aroma and rich flavors. From the first sip, it captivates the senses and transports us to a realm of tranquility. The versatility of tea is truly remarkable, offering a plethora of variations to suit diverse palates and occasions. Whether it's the soothing warmth of a cup of chamomile before bedtime or the invigorating kick of a robust black tea in the morning, tea adapts to our moods and desires. Beyond its exquisite taste, tea boasts numerous health benefits, promoting relaxation, digestion, and overall well-being. This ancient elixir, steeped in tradition, remains an emblem of serenity, making every moment shared with a cup of tea an experience to be savored and cherished.</p>
+
+             
+            
+          
+
+
+        </div>
+
+        
+
+
+    </div>
+
+
+
+
+</section>
+
+<div>
+    <footer>
+        <p class="footer-text">Favorite Wits sites you can visit to know more about the school that I go to</p>
+        <div class="social-media-links">
+            <a href="https://www.facebook.com/witsuniversity/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/wits_src/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@witsuniversity"><i class="fa-brands fa-tiktok"></i></a>
+            <!-- Add more social media links/icons as needed -->
+        </div>
+
+    </footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</body>
+</html>
